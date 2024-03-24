@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #f6f4f4;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      position: relative;
+      top:10%;
+      width: 80%;
+      height: 80%;
+      background: #f6f4f4;
+
+    }
+
+    .swiper-slide {
+      position: relative;
+      top:5%;
+      height: 50%;
+      text-align: center;
+      font-size: 18px;
+      background: #fbfcfc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .mySwiper{
+      text-align: center;
+    }
+    .mySwiper h1{
+      color:rgba(55, 48, 48, 0.535);
+    }
+    .star{
+      color:rgb(5, 5, 31);
+    }
+    .mySwiper p{
+      color:rgb(97, 95, 95);
+      font-size: 17px;
+    }
+    .customer-info{
+      width: 35%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .customer-review{
+      margin: 5%;
+    }
+    .customer-info img{
+      width: 30%;
+      height: auto;
+    }
+    .customer-info p{
+      color:black;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    @media (max-width: 570px) {
+      .swiper-slide {                    
+          flex-direction: column;           
+      }
+      .customer-info img{
+        width: 20%;
+        height:auto;
+      }
+      .customer-info {
+        width: 100%;
+        height: 30%;      
+        flex-direction: column; 
+        position: relative;  
+        top:5%;
+    }
+    }
+    @media (max-width: 700px) {
+      .swiper-slide {                    
+          flex-direction: column;           
+      }
+      .customer-info img{
+        width: 15%;
+        height:auto;
+      }
+      .customer-info {
+        width: 100%;
+        height: 30%;      
+        flex-direction: column; 
+        position: relative;  
+        top:5%;
+    }
+    }
+    @media (max-width: 1000px) {
+      .customer-info {
+          flex-direction: column;
+          
+      }
+      .customer-info {
+          width: 100%;
+          height: 30%;      
+          flex-direction: column; 
+          position: relative;  
+          top:5%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <h1>Our doctors and clinics have<br> earned over 5000+ reviews on Google </h1>
+    <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+    </div>
+    <p class="rating">Average Google Rating is 4.0</p>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="customer-info">
+          <img src="qw.png" alt="">
+          <p>Kamlesh Kumar</p>
+        </div>
+        <div class="customer-review">
+          <p>"Highly recommend Dr. Smith and the clinic! Exceptional care, friendly staff, and 
+            efficient service. I feel confident entrusting my health to their expertise."</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="customer-info">
+          <img src="f2.png" alt="">
+          <p>Aquib Razi</p>
+        </div>
+        <div class="customer-review">
+          <p>"Dr. Johnson and the clinic provide top-notch care. From booking appointments to follow-up, 
+            their professionalism shines. Grateful for their expertise and compassion."</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="customer-info">
+          <img src="f2.png" alt="">
+          <p>Ankush Kohli</p>
+        </div>
+        <div class="customer-review">
+          <p>"Exceptional experience at Dr. Patel's clinic. The staff is courteous, and Dr. Patel's 
+            expertise put me at ease. Highly recommend for anyone seeking quality healthcare."</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="customer-info">
+          <img src="f3.png" alt="">
+          <p>Sonu Don</p>
+        </div>
+        <div class="customer-review">
+          <p>"Dr. Rodriguez and her team exceeded my expectations. The clinic's atmosphere is
+             calming, and Dr. Rodriguez's knowledge is impressive. Trustworthy care at its finest."</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="customer-info">
+          <img src="qw.png" alt="">
+          <p>Yasir Hussain</p>
+        </div>
+        <div class="customer-review">
+          <p>"Outstanding service at Dr. Nguyen's clinic. The staff is attentive, and 
+            Dr. Nguyen's thoroughness is commendable. Grateful for the personalized care I received."</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="customer-info">
+          <img src="f1.png" alt=""> 
+          <p>Ali Haider</p>
+        </div>
+        <div class="customer-review">
+          <p>"Highly recommend Dr. Smith and the clinic! Exceptional care, friendly staff, and 
+            efficient service. I feel confident entrusting my health to their expertise."</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="customer-info">
+          <img src="f2.png" alt="">
+          <p>Tahir Khan</p>
+        </div>
+        <div class="customer-review">
+          <p>""Highly impressed with Dr. Lee and the clinic. Seamless experience from start to finish,
+             with Dr. Lee's expertise evident in every aspect of my care. A true gem in healthcare"</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="customer-info">
+          <img src="f3.png" alt="">
+          <p>Saad Mehmood</p>
+        </div>
+        <div class="customer-review">
+          <p>"Highly recommend Dr. Smith and the clinic! Exceptional care, friendly staff, and 
+            efficient service. I feel confident entrusting my health to their expertise."</p>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="customer-info">
+          <img src="qw.png" alt="">
+          <p>Ritik koli</p>
+        </div>
+        <div class="customer-review">
+          <p>"Highly recommend Dr. Smith and the clinic! Exceptional care, friendly staff, and 
+            efficient service. I feel confident entrusting my health to their expertise."</p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      pagination: { 
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
